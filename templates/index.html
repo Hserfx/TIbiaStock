@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>tibiastock</title>
+    <meta property="og:title" content="tibiastock" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./static/style.css" />
+    <div>
+      <link href="./static/index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <div class="home-container1">
+          <header class="home-header">
+            <img
+              alt="image"
+              src="./static/logo-200h-200h.png"
+              class="home-image"
+            />
+            <div class="home-navbar-responsive">
+              <svg viewBox="0 0 1024 1024" class="home-icon nav-btn">
+                <path
+                  d="M64 192h896v192h-896zM64 448h896v192h-896zM64 704h896v192h-896z"
+                ></path>
+              </svg>
+              <nav class="home-sidebar navbar">
+                <nav class="home-nav">
+                  <img
+                    alt="image"
+                    src="./static/logo-200h-200h.png"
+                    class="home-image1"
+                  />
+                  <a href={{url_for('index')}} class="home-navlink">
+                    <div class="home-container2">
+                      <span class="home-home">Home</span>
+                    </div>
+                  </a>
+                  <a href={{url_for('market_view')}} class="home-navlink1">
+                    <div class="home-container3">
+                      <span class="home-maketview">MarketView</span>
+                    </div>
+                  </a>
+                  <a href={{url_for('imbuement_calculator')}} class="home-navlink2">
+                    <div class="home-container4">
+                      <span class="home-imbuement-calculator">Imbu Calc</span>
+                    </div>
+                  </a>
+                </nav>
+              </nav>
+            </div>
+            <div class="home-navbar">
+              <a href={{url_for('index')}} class="home-navlink3">Home</a>
+              <a href={{url_for('market_view')}} class="home-navlink4">
+                <span>MarketView</span>
+                <br />
+              </a>
+              <a href={{url_for('imbuement_calculator')}} class="home-navlink5">
+                Imbuement Calculator
+              </a>
+            </div>
+          </header>
+          <div class="home-stats">
+            <div class="home-stat">
+              <h1 class="home-text02">5</h1>
+              <span class="home-text03">Servers</span>
+              <span class="home-text04">
+                <span>TibiaStock Tracks 5 servers</span>
+                <br />
+                <span>In future hopefully number will increase&nbsp;</span>
+                <br />
+              </span>
+            </div>
+            <div class="home-stat1">
+              <h1 class="home-text09">60+</h1>
+              <span class="home-text10">Items Tracked</span>
+              <span class="home-text11">
+                <span>TibiaStock tracks 60+ items</span>
+                <br />
+                <span>Imbuement items tracking is our main objective</span>
+                <br />
+              </span>
+            </div>
+            <div class="home-stat2">
+              <h1 class="home-text16">30~</h1>
+              <span class="home-text17">Minutes</span>
+              <span class="home-text18">
+                <span>Delay between tracking same item on same server</span>
+                <br />
+                <span>is approximetely 30 Minutes</span>
+                <br />
+              </span>
+            </div>
+          </div>
+          <footer class="home-footer">
+            <div class="home-container5">
+              <img
+                alt="image"
+                src="./static/logo-200h.png"
+                class="home-image2"
+              />
+              <span class="home-text23">
+                © 2024 TibiaStock, All Rights Reserved.
+              </span>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script>
+          window.onload = ()=> {
+              const navbar = document.getElementsByClassName("nav-btn")[0];
+              const sidebar = document.getElementsByClassName("navbar")[0];
+
+
+              navbar.addEventListener("click", ()=>{
+                  const visibility = sidebar.style.visibility;
+                  if(visibility == "visible"){
+                      sidebar.style.visibility="hidden";
+                  }
+                  else {
+                      sidebar.style.visibility="visible";
+                  }
+              })
+      }
+    </script>
+  </body>
+</html>

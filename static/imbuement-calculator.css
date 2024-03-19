@@ -1,0 +1,820 @@
+.imbuement-calculator-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.imbuement-calculator-container1 {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0px;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #141419;
+}
+.imbuement-calculator-header {
+  gap: 100px;
+  flex: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.imbuement-calculator-image {
+  width: 123px;
+  height: 130px;
+  align-self: center;
+  object-fit: cover;
+  margin-left: 250px;
+}
+.imbuement-calculator-navbar-responsive {
+  display: none;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.imbuement-calculator-icon {
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+.imbuement-calculator-sidebar {
+  width: 300px;
+  height: 700px;
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.imbuement-calculator-nav {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.imbuement-calculator-image1 {
+  width: 200px;
+  object-fit: cover;
+}
+.imbuement-calculator-navlink {
+  display: contents;
+}
+.imbuement-calculator-container2 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  text-decoration: none;
+}
+.imbuement-calculator-container2:hover {
+  color: #777777;
+}
+.imbuement-calculator-home {
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.imbuement-calculator-navlink1 {
+  display: contents;
+}
+.imbuement-calculator-container3 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  text-decoration: none;
+}
+.imbuement-calculator-container3:hover {
+  color: #777777;
+}
+.imbuement-calculator-maketview {
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.imbuement-calculator-navlink2 {
+  display: contents;
+}
+.imbuement-calculator-container4 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  text-decoration: none;
+}
+.imbuement-calculator-container4:hover {
+  color: #777777;
+}
+.imbuement-calculator-imbuement-calculator {
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.imbuement-calculator-navbar {
+  width: 1000px;
+  height: 24px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  margin-left: 100px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.imbuement-calculator-navlink3 {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  align-self: center;
+  font-style: normal;
+  transition: 0.2s;
+  font-family: "Verdana";
+  font-weight: 700;
+  text-decoration: none;
+}
+.imbuement-calculator-navlink3:hover {
+  color: #777777;
+}
+.imbuement-calculator-navlink4 {
+  color: #ffffff;
+  font-size: 24px;
+  align-self: center;
+  font-style: normal;
+  transition: 0.2s;
+  font-family: "Verdana";
+  font-weight: 700;
+  padding-left: 0px;
+  text-decoration: none;
+}
+.imbuement-calculator-navlink4:hover {
+  color: #777777;
+}
+.imbuement-calculator-navlink5 {
+  color: #ffffff;
+  font-size: 24px;
+  align-self: center;
+  font-style: normal;
+  transition: 0.2s;
+  font-family: "Verdana";
+  font-weight: 700;
+  padding-left: 0px;
+  text-decoration: none;
+}
+.imbuement-calculator-navlink5:hover {
+  color: #777777;
+}
+.imbuement-calculator-form {
+  width: 1186px;
+  height: 674px;
+  display: flex;
+  position: relative;
+  align-self: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.imbuement-calculator-dropdown-form {
+  width: auto;
+  height: 40vh;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.imbuement-calculator-server-select {
+  gap: var(--dl-space-space-halfunit);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.imbuement-calculator-server {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-family: "Verdana";
+}
+.imbuement-calculator-select {
+  width: auto;
+}
+.imbuement-calculator-imbu-name-select {
+  gap: var(--dl-space-space-halfunit);
+  width: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.imbuement-calculator-select-wrap {
+  height: 1em;
+}
+
+div.imbuement-calculator-select-wrap select {
+  position: absolute;
+  max-width: 15vw;
+  text-overflow: ellipsis;
+}
+
+.imbuement-calculator-imbu-name {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-family: "Verdana";
+}
+.imbuement-calculator-select1 {
+  width: auto;
+}
+.imbuement-calculator-imbu-power-select {
+  gap: var(--dl-space-space-halfunit);
+  width: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.imbuement-calculator-imbu-power {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-family: "Verdana";
+}
+.imbuement-calculator-select2 {
+  width: auto;
+}
+.imbuement-calculator-result-form {
+  width: 841px;
+  height: 590px;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  color: white;
+  font-size: 18px;
+  font-family: "Verdana";
+  font-weight: 400;
+}
+.imbuement-calculator-result-description {
+  color: red;
+}
+.imbuement-calculator-items-wrapper {
+  width: 591px;
+  height: 455px;
+  display: flex;
+  position: relative;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: space-between;
+}
+.imbuement-calculator-item-container-1 {
+  gap: var(--dl-space-space-twounits);
+  flex: 0 0 auto;
+  width: 164px;
+  height: 50%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.imbuement-calculator-item {
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: var(--dl-size-size-large);
+  display: flex;
+  align-items: flex-start;
+  border-color: #000000;
+  border-style: inset;
+  border-width: 2px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(315deg, rgb(49, 49, 49) 1.00%,rgb(0, 0, 0) 100.00%);
+}
+
+.imbuement-calculator-item img {
+  width: 50%;
+}
+.imbuement-calculator-price {
+  flex: 1;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: flex-start;
+  border-color: #000000;
+  border-style: inset;
+  border-width: 2px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(315deg, rgb(49, 49, 49) 1.00%,rgb(0, 0, 0) 100.00%);
+}
+.imbuement-calculator-item-container-11 {
+  gap: var(--dl-space-space-twounits);
+  flex: 0 0 auto;
+  width: 164px;
+  height: 50%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.imbuement-calculator-item1 {
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: var(--dl-size-size-large);
+  display: flex;
+  align-items: flex-start;
+  border-color: #000000;
+  border-style: inset;
+  border-width: 2px;
+  flex-direction: row;
+  background-image: linear-gradient(315deg, rgb(49, 49, 49) 1.00%,rgb(0, 0, 0) 100.00%);
+}
+.imbuement-calculator-price1 {
+  flex: 1;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: flex-start;
+  border-color: #000000;
+  border-style: inset;
+  border-width: 2px;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-image: linear-gradient(315deg, rgb(49, 49, 49) 1.00%,rgb(0, 0, 0) 100.00%);
+}
+.imbuement-calculator-item-container-12 {
+  gap: var(--dl-space-space-twounits);
+  flex: 0 0 auto;
+  width: 164px;
+  height: 50%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.imbuement-calculator-item2 {
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: var(--dl-size-size-large);
+  display: flex;
+  align-items: flex-start;
+  border-color: #000000;
+  border-style: inset;
+  border-width: 2px;
+  flex-direction: row;
+  background-image: linear-gradient(315deg, rgb(49, 49, 49) 1.00%,rgb(0, 0, 0) 100.00%);
+}
+.imbuement-calculator-price2 {
+  flex: 1;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: flex-start;
+  border-color: #000000;
+  border-style: inset;
+  border-width: 2px;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-image: linear-gradient(315deg, rgb(49, 49, 49) 1.00%,rgb(0, 0, 0) 100.00%);
+}
+.imbuement-calculator-result-total {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.imbuement-calculator-result-total img {
+  color: white;
+  width: 32px;
+}
+.imbuement-calculator-total {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-family: "Verdana";
+}
+.imbuement-calculator-result {
+  width: 200px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: #000000;
+  border-style: inset;
+  border-width: 2px;
+  flex-direction: row;
+  background-image: linear-gradient(315deg, rgb(49, 49, 49) 1.00%,rgb(0, 0, 0) 100.00%);
+  color: white;
+  font-size: 18px;
+  font-family: "Verdana";
+  font-weight: 400;
+}
+.imbuement-calculator-footer {
+  flex: 1;
+  width: 100%;
+  bottom: 0px;
+  height: auto;
+  display: flex;
+  max-width: auto;
+  align-self: center;
+  align-items: flex-end;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  justify-content: center;
+}
+.imbuement-calculator-container5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imbuement-calculator-image2 {
+  width: 119px;
+  height: 83px;
+  object-fit: cover;
+}
+.imbuement-calculator-text2 {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+}
+@media(max-width: 1600px) {
+  .imbuement-calculator-image {
+    margin-left: 100px;
+  }
+  .imbuement-calculator-navbar-responsive {
+    display: none;
+  }
+  .imbuement-calculator-icon {
+    display: none;
+  }
+  .imbuement-calculator-navbar {
+    margin-left: 0px;
+  }
+  .imbuement-calculator-form {
+    width: 1081px;
+    height: 611px;
+  }
+  .imbuement-calculator-dropdown-form {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .imbuement-calculator-footer {
+    flex: 1;
+    height: auto;
+    max-width: auto;
+    align-self: center;
+    align-items: flex-end;
+    margin-bottom: 0px;
+    justify-content: center;
+  }
+  .imbuement-calculator-container5 {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media(max-width: 1200px) {
+  .imbuement-calculator-header {
+    align-self: center;
+  }
+  .imbuement-calculator-image {
+    margin-left: 0px;
+  }
+  .imbuement-calculator-navbar-responsive {
+    display: none;
+  }
+  .imbuement-calculator-icon {
+    display: flex;
+  }
+  .imbuement-calculator-navbar {
+    width: 850px;
+  }
+  .imbuement-calculator-form {
+    width: 961px;
+    height: 653px;
+  }
+  .imbuement-calculator-dropdown-form {
+    width: 234px;
+    height: 472px;
+    align-items: flex-start;
+  }
+  .imbuement-calculator-result-form {
+    width: 800px;
+  }
+  .imbuement-calculator-items-wrapper {
+    width: 574px;
+    height: 426px;
+  }
+  .imbuement-calculator-footer {
+    flex: 1;
+    height: auto;
+    max-width: auto;
+  }
+  .imbuement-calculator-container5 {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media(max-width: 991px) {
+  .imbuement-calculator-container {
+    flex-direction: column;
+  }
+  .imbuement-calculator-container1 {
+    position: relative;
+  }
+  .imbuement-calculator-header {
+    justify-content: space-between;
+  }
+  .imbuement-calculator-navbar-responsive {
+    width: auto;
+    height: auto;
+    display: flex;
+    margin-right: 0px;
+    justify-content: center;
+  }
+  .imbuement-calculator-icon {
+    fill: #ffffff;
+    width: var(--dl-size-size-small);
+    height: var(--dl-size-size-small);
+    display: flex;
+    margin-right: var(--dl-space-space-threeunits);
+  }
+  .imbuement-calculator-sidebar {
+    top: 0px;
+    right: 0px;
+    padding: 0px;
+    z-index: 100;
+    position: absolute;
+    margin-top: 5vh;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3a3a3b;
+  }
+  .imbuement-calculator-nav {
+    height: 505px;
+    align-items: flex-start;
+    margin-bottom: var(--dl-space-space-unit);
+    justify-content: flex-start;
+  }
+  .imbuement-calculator-image1 {
+    width: 127px;
+    height: 100px;
+  }
+  .imbuement-calculator-container2 {
+    flex: 0;
+    width: 100%;
+    height: var(--dl-size-size-medium);
+    align-self: center;
+    align-items: center;
+    border-color: #000000;
+    border-width: 1px;
+    justify-content: center;
+    border-top-width: 2px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 2px;
+  }
+  .imbuement-calculator-home {
+    color: #ffffff;
+    font-size: 24px;
+    font-style: normal;
+    margin-top: var(--dl-space-space-threeunits);
+    font-family: Verdana;
+    font-weight: 700;
+  }
+  .imbuement-calculator-container3 {
+    width: 100%;
+    height: var(--dl-size-size-medium);
+    align-self: center;
+    align-items: center;
+    border-color: #000000;
+    flex-direction: column;
+    justify-content: center;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+  }
+  .imbuement-calculator-maketview {
+    color: #ffffff;
+    font-size: 24px;
+    font-style: normal;
+    font-family: Verdana;
+    font-weight: 700;
+    margin-bottom: 0px;
+  }
+  .imbuement-calculator-container4 {
+    width: 100%;
+    height: var(--dl-size-size-medium);
+    align-items: center;
+    border-color: #000000;
+    justify-content: center;
+    border-top-width: 2px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 2px;
+  }
+  .imbuement-calculator-imbuement-calculator {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-style: normal;
+    font-family: Verdana;
+    font-weight: 700;
+    margin-bottom: 0px;
+  }
+  .imbuement-calculator-navbar {
+    width: 750px;
+    display: none;
+    align-items: flex-start;
+  }
+  .imbuement-calculator-form {
+    height: 610px;
+    flex-direction: column;
+  }
+  .imbuement-calculator-dropdown-form {
+    flex: 0;
+    width: 70vw;
+    height: auto;
+    align-self: center;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .imbuement-calculator-server-select {
+    width: auto;
+  }
+  .imbuement-calculator-imbu-name-select {
+    width: auto;
+  }
+  .imbuement-calculator-imbu-name {
+    width: auto;
+    height: auto;
+  }
+  .imbuement-calculator-imbu-power-select {
+    width: auto;
+  }
+  .imbuement-calculator-result-form {
+    width: 790px;
+    height: 493px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .imbuement-calculator-items-wrapper {
+    align-self: center;
+  }
+  .imbuement-calculator-footer {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    max-width: auto;
+    align-self: center;
+    align-items: flex-end;
+    justify-content: center;
+  }
+}
+@media(max-width: 767px) {
+  .imbuement-calculator-icon {
+    display: flex;
+  }
+  .imbuement-calculator-sidebar {
+    left: -27vw;
+    height: 70vh;
+    padding: 0px;
+  }
+  .imbuement-calculator-navbar {
+    display: none;
+  }
+  .imbuement-calculator-form {
+    width: 100%;
+  }
+  .imbuement-calculator-dropdown-form {
+    gap: 0;
+    width: 458px;
+    height: 72px;
+    justify-content: space-between;
+  }
+  select {
+    font-size: 0.9rem;
+  }
+  .imbuement-calculator-result-form {
+    width: 737px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .imbuement-calculator-items-wrapper {
+    width: 516px;
+    align-self: center;
+    justify-content: space-between;
+  }
+  .imbuement-calculator-footer {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .imbuement-calculator-text2 {
+    text-align: center;
+    margin-left: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-unit);
+  }
+}
+@media(max-width: 479px) {
+  .imbuement-calculator-container1 {
+    width: 479px;
+    height: 1919px;
+  }
+  .imbuement-calculator-header {
+    width: 364px;
+  }
+  .imbuement-calculator-sidebar {
+    left: -30vw;
+    width: auto;
+    padding: 0px;
+  }
+  .imbuement-calculator-form {
+    height: 1906px;
+    justify-content: flex-start;
+  }
+  .imbuement-calculator-dropdown-form {
+    flex: 0;
+    width: 70vw;
+    height: 100%;
+    align-self: center;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vh;
+  }
+
+  div.imbuement-calculator-select-wrap select {
+    position: absolute;
+    max-width: 100%;
+    text-overflow: ellipsis;
+  }
+
+  .imbuement-calculator-result-form {
+    width: 100%;
+    height: 978px;
+    margin-top: var(--dl-space-space-sixunits);
+    font-size: 13px;
+  }
+  .imbuement-calculator-items-wrapper {
+    gap: var(--dl-space-space-sixunits);
+    width: 100%;
+    height: 788px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .imbuement-calculator-item-container-1 {
+    gap: var(--dl-space-space-halfunit);
+    width: var(--dl-size-size-large);
+    height: var(--dl-size-size-xlarge);
+    align-items: center;
+    justify-content: center;
+  }
+  .imbuement-calculator-price {
+    height: var(--dl-size-size-medium);
+    align-items: center;
+    margin-bottom: 0px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .imbuement-calculator-item-container-11 {
+    gap: var(--dl-space-space-halfunit);
+    width: var(--dl-size-size-large);
+    height: var(--dl-size-size-xlarge);
+    align-items: center;
+    justify-content: center;
+  }
+  .imbuement-calculator-price1 {
+    height: var(--dl-size-size-medium);
+    align-items: center;
+    margin-bottom: 0px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .imbuement-calculator-item-container-12 {
+    gap: var(--dl-space-space-halfunit);
+    width: var(--dl-size-size-large);
+    height: var(--dl-size-size-xlarge);
+    align-items: center;
+    justify-content: center;
+  }
+  .imbuement-calculator-price2 {
+    height: var(--dl-size-size-medium);
+    align-items: center;
+    margin-bottom: 0px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .imbuement-calculator-footer {
+    height: 532px;
+    padding: var(--dl-space-space-unit);
+    align-items: center;
+    flex-direction: column;
+  }
+  .imbuement-calculator-text2 {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}

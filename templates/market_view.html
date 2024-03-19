@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MarketView - tibiastock</title>
+    <meta property="og:title" content="MarketView - tibiastock" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}*
+       {  box-sizing: border-box;  border-width: 0;  border-style: solid;}
+       p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}
+       button {  background-color: transparent;}button,input,optgroup,select,textarea
+        {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}
+        button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"]
+         {  appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,
+         [type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner
+          {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,
+          [type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}
+          input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./static/style.css" />
+    <div>
+      <link href="./static/market-view.css" rel="stylesheet" />
+
+      <div class="market-view-container">
+        <div class="market-view-container1">
+          <header class="market-view-header">
+            <img
+              alt="image"
+              src="./static/logo-200h-200h.png"
+              class="market-view-image"
+            />
+            <div class="market-view-navbar-responsive">
+              <svg viewBox="0 0 1024 1024" class="market-view-icon nav-btn">
+                <path
+                  d="M64 192h896v192h-896zM64 448h896v192h-896zM64 704h896v192h-896z"
+                ></path>
+              </svg>
+              <nav class="market-view-sidebar navbar">
+                <nav class="market-view-nav">
+                  <img
+                    alt="image"
+                    src="./static/logo-200h-200h.png"
+                    class="market-view-image1"
+                  />
+                  <a href={{ url_for('index') }} class="market-view-navlink">
+                    <div class="market-view-container2">
+                      <span class="market-view-home">Home</span>
+                    </div>
+                  </a>
+                  <a href={{ url_for('market_view') }} class="market-view-navlink1">
+                    <div class="market-view-container3">
+                      <span class="market-view-maketview">MarketView</span>
+                    </div>
+                  </a>
+                  <a
+                    href={{ url_for('imbuement_calculator') }}
+                    class="market-view-navlink2"
+                  >
+                    <div class="market-view-container4">
+                      <span class="market-view-imbuement-calculator">
+                        Imbu Calc
+                      </span>
+                    </div>
+                  </a>
+                </nav>
+              </nav>
+            </div>
+            <div class="market-view-navbar">
+              <a href={{ url_for('index') }} class="market-view-navlink3">Home</a>
+              <a href={{ url_for('market_view') }} class="market-view-navlink4">
+                <span>MarketView</span>
+                <br />
+              </a>
+              <a href={{ url_for('imbuement_calculator') }} class="market-view-navlink5">
+                Imbuement Calculator
+              </a>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          </header>
+          <div class="market-view-charts">
+            
+            <canvas class="market-view-chart" id="price-chart"></canvas>
+              <div class="market-view-dropdown-menus">
+                <div class="market-view-server-select">
+                  <span class="market-view-server">Server</span>
+                  <select class="market-view-select">
+                                      {%for server in server_list%}
+                                      <option value='{{ server }}'>{{ server }}</option>
+                                      {%endfor%}
+                  </select>
+                </div>
+                <div class="market-view-item-select">
+                  <span class="market-view-server1">Item Name</span>                
+                  <input list="item">
+                  <datalist id="item">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                  </datalist>
+                </div>
+              </div>
+            </div>
+          <footer class="market-view-footer">
+            <div class="market-view-container5">
+              <img
+                alt="image"
+                src="./static/logo-200h.png"
+                class="market-view-image2"
+              />
+              <span class="market-view-text2">
+                © 2024 TibiaStock, All Rights Reserved.
+              </span>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script>
+          window.onload = ()=> {
+              const navbar = document.getElementsByClassName("nav-btn")[0];
+              const sidebar = document.getElementsByClassName("navbar")[0]
+
+
+              navbar.addEventListener("click", ()=>{
+                  const visibility = sidebar.style.visibility;
+                  if(visibility == "visible"){
+                      sidebar.style.visibility="hidden";
+                  }
+                  else {
+                      sidebar.style.visibility="visible";
+                  }
+              })
+      }
+    </script>
+  </body>
+</html>
