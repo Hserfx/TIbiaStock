@@ -1,14 +1,36 @@
-# Description
-Its an API for calculating Elo rating system.
-The [formula](https://www.e-mentor.edu.pl/artykul/index/numer/82/id/1444 "formula") for calculating a new ranking is as follows:
 
-Rn = R + K(O - P)     (1)
+# TibiaStock
 
-Where: Rn is the new value of the rating, R - the actual rating, O - submission outcome (1 - fully correct response, 0 - incorrect response), P - probability of submitting the fully correct response and constant K - the optimal value.
+TibiaStock is a web application designed to track and display stock information for the MMORPG Tibia. It features a Flask-based backend and a MongoDB database for data storage, with a frontend developed using TeleportHQ.
 
-# Requirements
-fastapi==0.111.0
-pydantic==2.7.2
-fastapi-cli==0.0.4
-uvicorn==0.27.0
+## Features
+- **Flask API**: Backend built with Flask for managing routes and data interactions.
+- **MongoDB**: Utilizes MongoDB for storing stock data.
+- **Frontend**: User interface developed with TeleportHQ, providing a clean and interactive experience.
 
+## Requirements
+- `Flask==2.1.1`
+- `pymongo==4.3.3`
+
+## Setup and Usage
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Hserfx/TIbiaStock.git
+   cd TIbiaStock
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the Flask app:
+   ```bash
+   flask run
+   ```
+
+4. Access the web interface by visiting `http://127.0.0.1:5000` in your browser.
+
+## License
+This project is licensed under the MIT License.
